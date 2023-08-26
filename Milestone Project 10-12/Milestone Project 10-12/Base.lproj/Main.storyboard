@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N2Z-eq-3bR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="jYb-BP-307">
+            <objects>
+                <collectionViewController id="1n9-vv-lHr" customClass="ViewController" customModule="Milestone_Project_10_12" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xuh-63-x1O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="35P-5n-tcf">
+                            <size key="itemSize" width="187" height="200"/>
+                            <size key="estimatedItemSize" width="187" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Photo" id="dzD-U2-LwP" customClass="PhotoCell" customModule="Milestone_Project_10_12" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oZR-fs-RFk">
+                                    <rect key="frame" x="0.0" y="0.0" width="187" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUp-MF-wJu">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="160"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqL-Lt-J6O">
+                                            <rect key="frame" x="18" y="168" width="150" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <size key="customSize" width="187" height="200"/>
+                                <connections>
+                                    <outlet property="caption" destination="VqL-Lt-J6O" id="QeV-Xn-Phy"/>
+                                    <outlet property="photoView" destination="rUp-MF-wJu" id="e5o-Ej-MUX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="1n9-vv-lHr" id="9eQ-2B-Fz8"/>
+                            <outlet property="delegate" destination="1n9-vv-lHr" id="IAj-1O-EVE"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="as0-BL-EzY"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjg-ts-cM1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771.01449275362324" y="80.357142857142847"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="nFa-p7-UWh">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="Gcz-gP-aRS" customClass="DetailViewController" customModule="Milestone_Project_10_12" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KES-Qw-h39">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-gY-TTL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O1U-T9-qa7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Njf-gY-TTL" firstAttribute="top" secondItem="O1U-T9-qa7" secondAttribute="top" id="BEc-HV-YmI"/>
+                            <constraint firstItem="Njf-gY-TTL" firstAttribute="leading" secondItem="O1U-T9-qa7" secondAttribute="leading" id="KxN-sB-fZM"/>
+                            <constraint firstItem="Njf-gY-TTL" firstAttribute="centerX" secondItem="KES-Qw-h39" secondAttribute="centerX" id="SHE-pE-AlA"/>
+                            <constraint firstItem="Njf-gY-TTL" firstAttribute="bottom" secondItem="O1U-T9-qa7" secondAttribute="bottom" id="YHH-Vg-uy1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Njf-gY-TTL" id="AtF-Nu-3cS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="az5-Nr-9OH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sGj-Wt-d6j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N2Z-eq-3bR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nx2-dM-bQi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1n9-vv-lHr" kind="relationship" relationship="rootViewController" id="ThR-rF-2UB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCE-ch-jq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139.13043478260872" y="80.357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
